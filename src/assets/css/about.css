@@ -1,0 +1,47 @@
+/* assets/css/style.css */
+
+/* Fixed size for team member images */
+.team-member img {
+    width: 200px; /* Updated width */
+    height: 200px; /* Updated height */
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    .team-member img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.navbar-collapse {
+    display: none;
+}
+
+.navbar-collapse.show {
+    display: block;
+}
+
+footer .social-icons {
+    margin-top: 1rem;
+}
+
+footer .social-icons a {
+    color: #bbb;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #fff;
+}
+
+footer .contact-details {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+}

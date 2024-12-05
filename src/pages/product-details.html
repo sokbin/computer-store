@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Computer Store</title>
+    <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Detailed information about our products.">
+    <meta name="keywords" content="computers, laptops, desktops, accessories, product details">
+    <meta name="author" content="Computer Store">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <!--product details specific style-->
+    <link rel="stylesheet" href="../assets/css/product-details.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="fixed-top">
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- Brand Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="../assets/images/logo.png" alt="Computer Store Logo" height="60" class="logo-img">
+                Computer Store
+            </a>
+            <!-- Navbar Toggler for Mobile View -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">PRODUCTS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">
+                            CART <span id="cart-count" class="badge badge-pill badge-primary">0</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <!-- My Account Dropdown -->
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            My Account
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <!-- Login and Sign Up Links -->
+                            <li><a class="dropdown-item" href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                            <li><a class="dropdown-item" href="register.html"><i class="fas fa-user-plus"></i> Sign Up</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb Navigation -->
+    <nav aria-label="breadcrumb" class="container mt-5 pt-5">
+        <ol class="breadcrumb">
+            <!-- Breadcrumb Links -->
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="products.html">Products</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Product Details</li>
+        </ol>
+    </nav>
+
+    <!-- Product Details Section -->
+    <section class="container">
+        <div class="row">
+            <!-- Product Image -->
+            <div class="col-md-6 col-sm-12">
+                <img src="" alt="Product Image" class="img-fluid product-image">
+            </div>
+            <!-- Product Information -->
+            <div class="col-md-6 col-sm-12">
+                <h2></h2>
+                <p class="text-muted"></p>
+                <p class="lead"></p>
+                <p class="product-description"></p>
+                <!-- Add to Cart Button -->
+                <button class="btn btn-primary" aria-label="Add to Cart">
+                    <i class="fas fa-cart-plus"></i> Add to Cart
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Left Section -->
+                <div class="col-md-6">
+                    <h5>Computer Store</h5>
+                    <p>&copy; 2024 Computer Store. All rights reserved.</p>
+                    <div class="contact-details">
+                        <!-- Contact Information -->
+                        <p>Address: 1234 Street, City, Country</p>
+                        <p>Phone: 012 345 678 / 089 765 432</p>
+                        <p>Email: info@computerstore.com</p>
+                    </div>
+                </div>
+                <!-- Footer Right Section -->
+                <div class="col-md-6 text-right">
+                    <ul class="list-inline">
+                        <!-- Footer Links -->
+                        <li class="list-inline-item"><a href="#" class="text-white">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white">Terms of Service</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white">Contact Us</a></li>
+                    </ul>
+                    <div class="social-icons">
+                        <!-- Social Media Icons -->
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="../assets/js/main.js" defer></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get product ID from URL parameters
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = urlParams.get('id');
+
+            // Product details data
+            const productDetails = {
+                1: { name: 'Product 1', category: 'Laptops', price: '$999.99', description: 'High-performance laptop with the latest specifications, perfect for gaming, work, and entertainment. Features a powerful processor, ample storage, and a stunning display.', image: '../assets/images/products/product1.jpg' },
+                2: { name: 'Product 2', category: 'Desktops', price: '$799.99', description: 'Powerful desktop with cutting-edge technology, ideal for both professional and personal use. Equipped with a high-speed processor, large memory, and advanced graphics.', image: '../assets/images/products/product2.jpg' },
+                3: { name: 'Product 3', category: 'Accessories', price: '$4.99', description: '6 In 1 Type C USB C Hub Adapter with 4K HDTV Multiport Card Reader USB3.0 TF PD SD Docking Station for PC Computer Accessories. Enhance your connectivity and productivity with this versatile hub.', image: '../assets/images/products/product3.jpg' },
+                4: { name: 'Product 4', category: 'Laptops', price: '$1199.99', description: 'Premium laptop with advanced features, designed for high-end performance and portability. Includes a sleek design, long battery life, and top-notch security features.', image: '../assets/images/products/product4.jpg' },
+                5: { name: 'Product 5', category: 'Desktops', price: '$699.99', description: 'Budget-friendly desktop for everyday use, offering reliable performance for home and office tasks. Comes with a robust build, efficient processor, and sufficient storage.', image: '../assets/images/products/product5.jpg' },
+                6: { name: 'Product 6', category: 'Accessories', price: '$29.99', description: 'Stylish accessories to enhance your computer setup, including ergonomic designs and high-quality materials. Perfect for improving your workspace aesthetics and functionality.', image: '../assets/images/products/product6.jpg' },
+                7: { name: 'Product 7', category: 'Laptops', price: '$899.99', description: 'Lightweight laptop for work and entertainment, featuring a compact design, fast performance, and excellent battery life. Ideal for on-the-go professionals and students.', image: '../assets/images/products/product7.jpg' },
+                8: { name: 'Product 8', category: 'Desktops', price: '$899.99', description: 'Powerful desktop for gaming and multimedia, equipped with high-end graphics, fast processors, and ample storage. Perfect for gamers and content creators.', image: '../assets/images/products/product8.jpg' },
+                9: { name: 'Product 9', category: 'Accessories', price: '$19.99', description: 'Useful accessories for your computer needs, including cables, adapters, and peripherals. Enhance your computing experience with these essential tools.', image: '../assets/images/products/product9.jpg' },
+                10: { name: 'Product 10', category: 'Laptops', price: '$1099.99', description: 'Versatile laptop for work and entertainment, offering a perfect balance of performance, portability, and battery life. Suitable for both professional and personal use.', image: '../assets/images/products/product10.jpg' },
+                11: { name: 'Product 11', category: 'Desktops', price: '$999.99', description: 'All-in-one desktop for home and office use, combining a sleek design with powerful performance. Features a large display, integrated components, and easy setup.', image: '../assets/images/products/product11.jpg' },
+                12: { name: 'Product 12', category: 'Accessories', price: '$39.99', description: 'Premium accessories for your computer setup, including high-quality materials and innovative designs. Perfect for enhancing your productivity and workspace aesthetics.', image: '../assets/images/products/product12.jpg' },
+            };
+
+            // Display product details
+            const product = productDetails[productId];
+            if (product) {
+                document.querySelector('h2').textContent = product.name;
+                document.querySelector('.text-muted').textContent = `Category: ${product.category}`;
+                document.querySelector('.lead').textContent = `Price: ${product.price}`;
+                document.querySelector('.product-description').textContent = product.description;
+                document.querySelector('.product-image').src = product.image;
+
+                // Add to Cart button click event
+                document.querySelector('.btn-primary').addEventListener('click', function () {
+                    addToCart(productId);
+                });
+            } else {
+                // Handle product not found
+                document.querySelector('h2').textContent = 'Product Not Found';
+                document.querySelector('.text-muted').textContent = '';
+                document.querySelector('.lead').textContent = '';
+                document.querySelector('.product-description').textContent = 'The product you are looking for does not exist.';
+                document.querySelector('.product-image').style.display = 'none';
+            }
+
+            // Update cart count in the navbar
+            function updateCartCount() {
+                const cart = JSON.parse(localStorage.getItem('cart')) || [];
+                const cartCount = cart.reduce((total, product) => total + product.quantity, 0);
+                document.getElementById('cart-count').textContent = cartCount;
+            }
+
+            // Add product to cart
+            function addToCart(productId) {
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                const product = productDetails[productId];
+                const existingProduct = cart.find(p => p.id == productId);
+
+                if (existingProduct) {
+                    existingProduct.quantity += 1;
+                } else {
+                    product.quantity = 1;
+                    cart.push(product);
+                }
+
+                localStorage.setItem('cart', JSON.stringify(cart));
+                alert(`${product.name} has been added to your cart.`);
+                updateCartCount();
+            }
+
+            // Initial cart count update
+            updateCartCount();
+
+            // Navbar toggler for mobile view
+            const navbarToggler = document.querySelector('.navbar-toggler');
+            const navbarCollapse = document.querySelector('.navbar-collapse');
+
+            navbarToggler.addEventListener('click', function () {
+                navbarCollapse.classList.toggle('show');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

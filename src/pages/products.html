@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character set, viewport, and SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Store</title>
+    <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Find the best computers and accessories at our Computer Store.">
+    <meta name="keywords" content="computers, laptops, desktops, accessories, computer store">
+    <meta name="author" content="Computer Store">
+    <!-- Bootstrap CSS for styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Custom CSS for additional styling -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- jQuery for DOM manipulation -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS for interactive components -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header with navigation bar -->
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="../assets/images/logo.png" alt="Computer Store Logo" height="60" class="logo-img">
+                Computer Store
+            </a>
+            <!-- Navbar toggler for mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="products.html">PRODUCTS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">
+                            CART <span id="cart-count" class="badge badge-pill badge-primary">0</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            My Account
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                            <li><a class="dropdown-item" href="register.html"><i class="fas fa-user-plus"></i> Sign Up</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Products Listing Section -->
+    <section class="container my-5">
+        <h2 class="text-center" style="margin-top: 100px;" aria-label="Products Section">Products</h2>
+        <!-- Filters for category and price sorting -->
+        <div class="row mb-4">
+            <div class="col-md-4 col-sm-6 mb-2">
+                <select class="form-control" aria-label="Filter by category">
+                    <option>All Categories</option>
+                    <option>Laptops</option>
+                    <option>Desktops</option>
+                    <option>Accessories</option>
+                </select>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-2">
+                <select class="form-control" aria-label="Sort by price">
+                    <option>Sort by Price</option>
+                    <option>Low to High</option>
+                    <option>High to Low</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Product Cards Grid -->
+        <div class="row" id="product-list">
+            <!-- Product cards will be generated by JavaScript -->
+        </div>
+
+        <!-- Pagination -->
+        <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center" id="pagination">
+                <!-- Pagination items will be generated by JavaScript -->
+            </ul>
+        </nav>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Computer Store</h5>
+                    <p>&copy; 2024 Computer Store. All rights reserved.</p>
+                    <div class="contact-details">
+                        <p>Address: 1234 Street, City, Country</p>
+                        <p>Phone: 012 345 678 / 089 765 432</p>
+                        <p>Email: info@computerstore.com</p>
+                    </div>
+                </div>
+                <div class="col-md-6 text-right">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#" class="text-white">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white">Terms of Service</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white">Contact Us</a></li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS for dynamic content -->
+    <script src="../assets/js/main.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Array of product objects
+            const products = [
+                { id: 1, name: 'Product 1', category: 'Laptops', price: '$999.99', description: 'High-performance laptop with latest specifications.', image: '../assets/images/products/product1.jpg' },
+                { id: 2, name: 'Product 2', category: 'Desktops', price: '$799.99', description: 'Powerful desktop with cutting-edge technology.', image: '../assets/images/products/product2.jpg' },
+                { id: 3, name: 'Product 3', category: 'Accessories', price: '$4.99', description: '6 In 1 Type C Usb C Hub Adapter With 4k HDTV Multiport Card Reader Usb3.0 TF Pd SD Docking Station For Pc Computer Accessories.', image: '../assets/images/products/product3.jpg' },
+                { id: 4, name: 'Product 4', category: 'Laptops', price: '$1199.99', description: 'Premium laptop with advanced features.', image: '../assets/images/products/product4.jpg' },
+                { id: 5, name: 'Product 5', category: 'Desktops', price: '$699.99', description: 'Budget-friendly desktop for everyday use.', image: '../assets/images/products/product5.jpg' },
+                { id: 6, name: 'Product 6', category: 'Accessories', price: '$29.99', description: 'Stylish accessories to enhance your computer setup.', image: '../assets/images/products/product6.jpg' },
+                { id: 7, name: 'Product 7', category: 'Laptops', price: '$899.99', description: 'Lightweight laptop for work and entertainment.', image: '../assets/images/products/product7.jpg' },
+                { id: 8, name: 'Product 8', category: 'Desktops', price: '$899.99', description: 'Powerful desktop for gaming and multimedia.', image: '../assets/images/products/product8.jpg' },
+                { id: 9, name: 'Product 9', category: 'Accessories', price: '$19.99', description: 'Useful accessories for your computer needs.', image: '../assets/images/products/product9.jpg' },
+                { id: 10, name: 'Product 10', category: 'Laptops', price: '$1099.99', description: 'Versatile laptop for work and entertainment.', image: '../assets/images/products/product10.jpg' },
+                { id: 11, name: 'Product 11', category: 'Desktops', price: '$999.99', description: 'All-in-one desktop for home and office use.', image: '../assets/images/products/product11.jpg' },
+                { id: 12, name: 'Product 12', category: 'Accessories', price: '$39.99', description: 'Premium accessories for your computer setup.', image: '../assets/images/products/product12.jpg' },
+                // Add more dummy products as needed
+            ];
+
+            const productList = document.getElementById('product-list');
+            const categoryFilter = document.querySelector('select[aria-label="Filter by category"]');
+            const priceSort = document.querySelector('select[aria-label="Sort by price"]');
+
+            // Function to render products based on filters
+            function renderProducts(filteredProducts) {
+                productList.innerHTML = '';
+                filteredProducts.forEach(product => {
+                    const productCard = `
+                        <div class="col-md-4 mb-4">
+                            <div class="card shadow-sm">
+                                <img src="${product.image}" class="card-img-top" alt="${product.name} image">
+                                <div class="card-body">
+                                    <h5 class="card-title">${product.name}</h5>
+                                    <p class="card-text">${product.description}</p>
+                                    <p class="card-text"><strong>Price: ${product.price}</strong></p>
+                                    <button class="btn btn-primary add-to-cart" data-id="${product.id}" aria-label="Add ${product.name} to cart">
+                                        <i class="fas fa-cart-plus"></i> Add to Cart
+                                    </button>
+                                    <a href="product-details.html?id=${product.id}" class="btn btn-secondary" aria-label="View details of ${product.name}">
+                                        <i class="fas fa-info-circle"></i> View Details
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    productList.innerHTML += productCard;
+                });
+            }
+
+            // Function to filter products based on selected category and price
+            function filterProducts() {
+                let filteredProducts = products;
+
+                const selectedCategory = categoryFilter.value;
+                if (selectedCategory !== 'All Categories') {
+                    filteredProducts = filteredProducts.filter(product => product.category === selectedCategory);
+                }
+
+                const selectedPriceSort = priceSort.value;
+                if (selectedPriceSort === 'Low to High') {
+                    filteredProducts.sort((a, b) => parseFloat(a.price.substring(1)) - parseFloat(b.price.substring(1)));
+                } else if (selectedPriceSort === 'High to Low') {
+                    filteredProducts.sort((a, b) => parseFloat(b.price.substring(1)) - parseFloat(a.price.substring(1)));
+                }
+
+                renderProducts(filteredProducts);
+            }
+
+            // Event listeners for filter and sort dropdowns
+            categoryFilter.addEventListener('change', filterProducts);
+            priceSort.addEventListener('change', filterProducts);
+
+            // Event listener for add-to-cart buttons
+            productList.addEventListener('click', function (event) {
+                if (event.target.classList.contains('add-to-cart')) {
+                    const productId = event.target.getAttribute('data-id');
+                    addToCart(productId);
+                }
+            });
+
+            // Function to add product to cart
+            function addToCart(productId) {
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                const product = products.find(p => p.id == productId);
+                const existingProduct = cart.find(p => p.id == productId);
+
+                if (existingProduct) {
+                    existingProduct.quantity += 1;
+                } else {
+                    product.quantity = 1;
+                    cart.push(product);
+                }
+
+                localStorage.setItem('cart', JSON.stringify(cart));
+                alert(`${product.name} has been added to your cart.`);
+                updateCartCount();
+                updateProductCartCount(productId);
+            }
+
+            // Function to update product quantity in cart
+            function updateProductCartCount(productId) {
+                const cart = JSON.parse(localStorage.getItem('cart')) || [];
+                const product = cart.find(p => p.id == productId);
+                if (product) {
+                    document.getElementById(`cart-count-${productId}`).textContent = product.quantity;
+                }
+            }
+
+            // Function to update cart count in the navbar
+            function updateCartCount() {
+                const cart = JSON.parse(localStorage.getItem('cart')) || [];
+                const cartCount = cart.reduce((total, product) => total + product.quantity, 0);
+                document.getElementById('cart-count').textContent = cartCount;
+            }
+
+            // Initial rendering of products and cart count
+            renderProducts(products);
+            updateCartCount();
+
+            // Navbar toggler for mobile view
+            const navbarToggler = document.querySelector('.navbar-toggler');
+            const navbarCollapse = document.querySelector('.navbar-collapse');
+
+            navbarToggler.addEventListener('click', function () {
+                navbarCollapse.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+
+</html>

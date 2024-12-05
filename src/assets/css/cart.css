@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes full viewport height */
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #222;
+    color: #bbb;
+    padding: 16px 0;
+    text-align: center;
+    font-size: 0.875rem;
+    margin-top: auto; /* Ensure footer is pushed to the bottom */
+}
+
+footer .social-icons {
+    margin-top: 1rem;
+}
+
+footer .social-icons a {
+    color: #bbb;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #fff;
+}
+
+footer .contact-details {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+}
+
+.navbar-collapse {
+    display: none;
+}
+
+.navbar-collapse.show {
+    display: block;
+}

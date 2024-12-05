@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags and title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Store</title>
+    <meta name="description"
+        content="Welcome to our Computer Store. We provide high-quality computer products for over a decade.">
+    <meta name="keywords" content="Computer, Store, Laptops, Desktops, Accessories">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- favicon -->
+    <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- Logo and Brand Name -->
+            <a class="navbar-brand" href="#">
+                <img src="../assets/images/logo.png" alt="Computer Store Logo" height="60" class="logo-img">
+                Computer Store
+            </a>
+            <!-- Navbar Toggler for Mobile View -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <!-- Navigation Links -->
+                    <li class="nav-item"><a class="nav-link active" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">PRODUCTS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+                    <!-- Cart Link with Badge -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">
+                            CART <span id="cart-count" class="badge badge-pill badge-primary">0</span>
+                        </a>
+                    </li>
+                    <!-- My Account Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            My Account
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                            <li><a class="dropdown-item" href="register.html"><i class="fas fa-user-plus"></i> Sign Up</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section (Commented Out) -->
+    <!-- <section id="hero" class="d-flex align-items-center text-center bg-light text-dark" aria-label="Hero Section">
+        <!-- <div class="container">
+            <h1 class="text-light">Welcome to Our Computer Store</h1>
+            <p class="text-light">Providing high-quality computer products for over a decade</p>
+            <a href="products.html" class="btn btn-primary btn-lg mt-4" aria-label="Shop Now">
+                <i class="fas fa-shopping-cart"></i> Shop Now
+            </a>
+        </div> -->
+    <!-- </section> -->
+
+    <!-- Banner Section with Carousel -->
+    <section id="banner" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#banner" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#banner" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#banner" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <!-- Carousel Items -->
+        <div class="carousel-inner">
+            <!-- First Slide -->
+            <div class="carousel-item active">
+                <img src="../assets/images/banners/banner1.jpg" class="d-block w-100" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>High-Quality Laptops</h5>
+                    <p>Discover our range of high-performance laptops.</p>
+                    <a href="products.html" class="btn btn-primary btn-lg mt-4" aria-label="Shop Now">
+                        <i class="fas fa-shopping-cart"></i> Shop Now
+                    </a>
+                </div>
+            </div>
+            <!-- Second Slide -->
+            <div class="carousel-item">
+                <img src="../assets/images/banners/banner2.jpg" class="d-block w-100" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Powerful Desktops</h5>
+                    <p>Explore our collection of powerful desktops.</p>
+                    <a href="products.html" class="btn btn-primary btn-lg mt-4" aria-label="Shop Now">
+                        <i class="fas fa-shopping-cart"></i> Shop Now
+                    </a>
+                </div>
+            </div>
+            <!-- Third Slide -->
+            <div class="carousel-item">
+                <img src="../assets/images/banners/banner3.jpg" class="d-block w-100" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Accessories</h5>
+                    <p>Find the perfect accessories for your computer setup.</p>
+                    <a href="products.html" class="btn btn-primary btn-lg mt-4" aria-label="Shop Now">
+                        <i class="fas fa-shopping-cart"></i> Shop Now
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#banner" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#banner" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </section>
+
+    <!-- Information Section -->
+    <section id="information" class="container my-5">
+        <div class="row text-center">
+            <!-- Information Cards -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <i class="fas fa-truck fa-3x mb-3"></i>
+                        <p class="card-text">Fast delivery to 25 provinces</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <i class="fas fa-dollar-sign fa-3x mb-3"></i>
+                        <p class="card-text">Best prices in the city</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <i class="fas fa-shield fa-3x mb-3"></i>
+                        <p class="card-text">Comprehensive warranty</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <i class="fas fa-headset fa-3x mb-3"></i>
+                        <p class="card-text">Online support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <section class="container my-5">
+        <h2 class="text-center">Our Products</h2>
+        <div class="row" id="product-list">
+            <!-- Product cards will be generated by JavaScript -->
+        </div>
+
+        <!-- Pagination -->
+        <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center" id="pagination">
+                <!-- Pagination items will be generated by JavaScript -->
+            </ul>
+        </nav>
+    </section>
+
+    <!-- Partner Logos Section -->
+    <section class="container my-5">
+        <!-- <h2 class="text-center">Our Partners</h2> -->
+        <div class="row text-center" id="logos">
+            <div class="logo-wrapper" style="width: 100%;">
+                <!-- Partner Logos -->
+                <div class="col-md-3 mb-4">
+                    <img src="../assets/images/partners/partner1.png" alt="Partner 1 Logo" class="img-fluid" loading="lazy">
+                </div>
+                <div class="col-md-3 mb-4">
+                    <img src="../assets/images/partners/partner2.png" alt="Partner 2 Logo" class="img-fluid" loading="lazy">
+                </div>
+                <div class="col-md-3 mb-4">
+                    <img src="../assets/images/partners/partner3.png" alt="Partner 3 Logo" class="img-fluid" loading="lazy">
+                </div>
+                <div class="col-md-3 mb-4">
+                    <img src="../assets/images/partners/partner4.png" alt="Partner 4 Logo" class="img-fluid" loading="lazy">
+                </div>
+                <div class="col-md-3 mb-4">
+                    <img src="../assets/images/partners/partner5.png" alt="Partner 5 Logo" class="img-fluid" loading="lazy">
+                </div>
+                <div class="col-md-3 mb-4">
+                    <img src="../assets/images/partners/partner6.png" alt="Partner 6 Logo" class="img-fluid" loading="lazy">
+                </div>
+                <div class="col-md-3 mb-4">
+                    <img src="../assets/images/partners/partner7.png" alt="Partner 7 Logo" class="img-fluid" loading="lazy">
+                </div>
+                <div class="col-md-3 mb-4">
+                    <img src="../assets/images/partners/partner8.png" alt="Partner 8 Logo" class="img-fluid" loading="lazy">
+                </div>
+                <div class="col-md-3 mb-4">
+                    <img src="../assets/images/partners/partner9.png" alt="Partner 9 Logo" class="img-fluid" loading="lazy">
+                </div>
+                <div class="col-md-3 mb-4">
+                    <img src="../assets/images/partners/partner10.png" alt="Partner 10 Logo" class="img-fluid" loading="lazy">
+                </div>
+                <div class="col-md-3 mb-4">
+                    <img src="../assets/images/partners/partner11.png" alt="Partner 11 Logo" class="img-fluid" loading="lazy">
+                </div>
+                <div class="col-md-3 mb-4">
+                    <img src="../assets/images/partners/partner12.png" alt="Partner 12 Logo" class="img-fluid" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Left Column -->
+                <div class="col-md-6">
+                    <!-- Company Info and Contact Details -->
+                    <h5>Computer Store</h5>
+                    <p>&copy; 2024 Computer Store. All rights reserved.</p>
+                    <div class="contact-details">
+                        <p>Address: 1234 Street, City, Country</p>
+                        <p>Phone: 012 345 678 / 089 765 432</p>
+                        <p>Email: info@computerstore.com</p>
+                    </div>
+                </div>
+                <!-- Footer Right Column -->
+                <div class="col-md-6 text-right">
+                    <!-- Footer Links -->
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#" class="text-white">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white">Terms of Service</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white">Contact Us</a></li>
+                    </ul>
+                    <!-- Social Media Icons -->
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="../assets/js/main.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Dummy product data
+            const products = [
+                { id: 1, name: 'Product 1', category: 'Laptops', price: '$999.99', description: 'High-performance laptop with latest specifications.', image: '../assets/images/products/product1.jpg' },
+                { id: 2, name: 'Product 2', category: 'Desktops', price: '$799.99', description: 'Powerful desktop with cutting-edge technology.', image: '../assets/images/products/product2.jpg' },
+                { id: 3, name: 'Product 3', category: 'Accessories', price: '$4.99', description: '6 In 1 Type C Usb C Hub Adapter With 4k HDTV Multiport Card Reader Usb3.0 TF Pd SD Docking Station For Pc Computer Accessories.', image: '../assets/images/products/product3.jpg' },
+                { id: 4, name: 'Product 4', category: 'Laptops', price: '$1199.99', description: 'Premium laptop with advanced features.', image: '../assets/images/products/product4.jpg' },
+                { id: 5, name: 'Product 5', category: 'Desktops', price: '$699.99', description: 'Budget-friendly desktop for everyday use.', image: '../assets/images/products/product5.jpg' },
+                { id: 6, name: 'Product 6', category: 'Accessories', price: '$29.99', description: 'Stylish accessories to enhance your computer setup.', image: '../assets/images/products/product6.jpg' },
+                { id: 7, name: 'Product 7', category: 'Laptops', price: '$899.99', description: 'Lightweight laptop for work and entertainment.', image: '../assets/images/products/product7.jpg' },
+                { id: 8, name: 'Product 8', category: 'Desktops', price: '$899.99', description: 'Powerful desktop for gaming and multimedia.', image: '../assets/images/products/product8.jpg' },
+                { id: 9, name: 'Product 9', category: 'Accessories', price: '$19.99', description: 'Useful accessories for your computer needs.', image: '../assets/images/products/product9.jpg' },
+                { id: 10, name: 'Product 10', category: 'Laptops', price: '$1099.99', description: 'Versatile laptop for work and entertainment.', image: '../assets/images/products/product10.jpg' },
+                { id: 11, name: 'Product 11', category: 'Desktops', price: '$999.99', description: 'All-in-one desktop for home and office use.', image: '../assets/images/products/product11.jpg' },
+                { id: 12, name: 'Product 12', category: 'Accessories', price: '$39.99', description: 'Premium accessories for your computer setup.', image: '../assets/images/products/product12.jpg' },
+                // Add more dummy products as needed
+            ];
+
+            // Populate product list
+            const productList = document.getElementById('product-list');
+            products.forEach(product => {
+                const productCard = `
+                    <!-- Product Card -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card shadow-sm">
+                            <img src="${product.image}" class="card-img-top" alt="${product.name}">
+                            <div class="card-body">
+                                <h5 class="card-title">${product.name}</h5>
+                                <p class="card-text">${product.description}</p>
+                                <p class="card-text"><strong>Price: ${product.price}</strong></p>
+                                <button class="btn btn-primary add-to-cart" data-id="${product.id}" aria-label="Add ${product.name} to cart">
+                                    <i class="fas fa-cart-plus"></i> Add to Cart
+                                </button>
+                                <a href="product-details.html?id=${product.id}" class="btn btn-secondary" aria-label="View details of ${product.name}">
+                                    <i class="fas fa-info-circle"></i> View Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                productList.innerHTML += productCard;
+            });
+
+            // Add to cart functionality
+            productList.addEventListener('click', function (event) {
+                if (event.target.classList.contains('add-to-cart')) {
+                    const productId = event.target.getAttribute('data-id');
+                    addToCart(productId);
+                }
+            });
+
+            function addToCart(productId) {
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                const product = products.find(p => p.id == productId);
+                const existingProduct = cart.find(p => p.id == productId);
+
+                if (existingProduct) {
+                    existingProduct.quantity += 1;
+                } else {
+                    product.quantity = 1;
+                    cart.push(product);
+                }
+
+                localStorage.setItem('cart', JSON.stringify(cart));
+                alert(`${product.name} has been added to your cart.`);
+                updateCartCount();
+            }
+
+            function updateCartCount() {
+                const cart = JSON.parse(localStorage.getItem('cart')) || [];
+                const cartCount = cart.reduce((total, product) => total + product.quantity, 0);
+                document.getElementById('cart-count').textContent = cartCount;
+            }
+
+            updateCartCount();
+
+            // Navbar toggler for mobile view
+            const navbarToggler = document.querySelector('.navbar-toggler');
+            const navbarCollapse = document.querySelector('.navbar-collapse');
+
+            navbarToggler.addEventListener('click', function () {
+                navbarCollapse.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+
+</html>
